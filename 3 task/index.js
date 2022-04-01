@@ -11,6 +11,4 @@ const promise3 = 6;
 
 const promises = [promise1, promise2, promise3];
 
-Promise.allSettled(promises).then(values => {
-    console.log(`status${values.status},  values${values.value}`);
-});
+Promise.allSettled(promises).then(values => console.log(values));
